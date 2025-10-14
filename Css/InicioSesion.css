@@ -1,0 +1,222 @@
+:root{
+    --color-text-one:#000;
+    --color-text-two:#fff;
+    --color-text-hover:#fc0452;
+    --font-family-logo: "Dancing Script", cursive;
+    --color-trans:transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#VideoFondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+header{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 40px;
+    background-color:var(--color-trans);
+    border-bottom: #ddd solid 1px;
+}
+
+.Loogo{
+    width:30px;
+    height: 30px;
+}
+
+.logo{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-logo);
+    text-decoration: none;
+    color:var(--color-text-two);
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.logo:hover{
+    color: var(--color-text-hover);
+    font-size: 1.2rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#registrate{
+    background-color: var(--color-text-hover);
+    border: var(--color-text-hover) solid 10px;
+    border-radius: 10px;
+}
+#registrate:hover{
+    color: var(--color-text-two)
+}
+nav a{
+    text-decoration: none;
+    color:var(--color-text-two);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--color-text-hover);
+    font-size: 1.2rem;
+}
+
+.contenedor-form{
+    min-height: calc(100vh - 80px);
+    background-color: var(--color-trans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.tarjeta-formulario{
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: left;
+}
+
+.contenedor-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: var(--color-text-hover);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-text-hover);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+button:hover {
+    background-color: #cb0144;
+    font-size: 1.2rem;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color:var(--color-text-hover);
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.logo-contenedor{
+    margin-top: 20px;
+    margin-bottom:-50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#central{
+    width: 90px;
+    height: 90px;
+
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+footer p{
+    margin: 20px;
+    font-size: 15px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.40);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #f0f0f0;
+    font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-text-hover);
+    transform: scale(1.1);
+}
