@@ -1,0 +1,309 @@
+:root{ /*Ruta para crear "varibles"*/
+    --color-text-one:#000;
+    --color-text-two:#fff;
+    --color-text-hover:#fc0452;
+    --font-family-logo: "Dancing Script", cursive;
+    --color-trans:transparent;
+}
+
+*{ /*Resetear estilos predeterminados*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos y configuracion para el video que aparece de fondo*/
+#VideoFondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+/*Estilos generales para todo lo que este en el header (logo y nav)*/
+header{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color:var(--color-trans);
+    border-bottom: #ddd solid 1px;
+}
+/*Logo h1 del nav bar*/
+.logo{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-logo);
+    text-decoration: none;
+    color:var(--color-text-two);
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+/*Hover para el logo del nav bar*/
+.logo:hover{
+    color: var(--color-text-hover);
+    font-size: 1.2rem;
+}
+
+/*Estilos generales para las opciones del nav bar*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/*Estilos para boton grande del nav bar Registrate*/
+#registrate{
+    background-color: var(--color-text-hover);
+    border: var(--color-text-hover) solid 10px;
+    border-radius: 10px;
+}
+
+/*Hover para boton grande del nav bar*/
+#registrate:hover{
+    color: var(--color-text-two)
+}
+
+/*Estilos para opciones del nav bar*/
+nav a{
+    text-decoration: none;
+    color:var(--color-text-two);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+/*Hover para las opciones del nav bar*/
+nav a:hover{
+    color: var(--color-text-hover);
+    font-size: 1.2rem;
+}
+
+/*Seccion completa que contiene form*/
+.contenedor-form{
+    min-height: calc(100vh - 80px);
+    background-color: var(--color-trans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+/*Div que contiene el formulario de registro*/
+.tarjeta-formulario{
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: left;
+}
+
+/*Titulo del formulario*/
+.contenedor-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/*Estilos generales para las secciones del formulario*/
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*Estilos para los label del formulario*/
+label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+/*Estilos para las barras de texto del formulario*/
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/*Estilo para cuando se seleccione el formulario*/
+input:focus {
+    border-color: var(--color-text-hover);
+}
+
+/*Estilos para el boton de enviar del formulario*/
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-text-hover);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+/*Hover para el boton de enviar del formulario*/
+button:hover {
+    background-color: #cb0144;
+    font-size: 1.2rem;
+}
+
+/*Estilo del texto ¿Ya tienes cuenta?*/
+.register-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/*Estilo del link del texto ¿Ya tienes cuenta Inicia sesion?*/
+.register-text a {
+    color:var(--color-text-hover);
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+/*Hover del link del texto ¿Ya tienes cuenta Inicia sesion?*/
+.register-text a:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+/*Div que contiene Imagen logo arriba del formulario*/
+.logo-contenedor{
+    margin-top: 10px;
+    margin-bottom:-50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo directo Imagen logo arriba del formulario*/
+#central{
+    width: 90px;
+    height: 90px;
+
+}
+
+/*Estilos del texto del pie de pagina*/
+footer p{
+    margin: 20px;
+    font-size: 15px;
+}
+
+/*Estilo general del pie de pagina*/
+footer{
+    background: rgba(0, 0, 0, 0.40);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/*Estilos div que contiene todo el pie de pagina*/
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/*Estilo de iconos de redes sociales del pie de pagina*/
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+/*Estilos de link de los iconos de redes sociales del pie de pagina*/
+.social-icons a {
+    color: #f0f0f0;
+    font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/*Hover de los iconos del pie de pagina*/
+.social-icons a:hover {
+    color: var(--color-text-hover);
+    transform: scale(1.1);
+}
+
+/* --- Header (mantén tus estilos actuales y añade esto al final) --- */
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-text-two);
+    z-index: 11;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  /* Mostrar botón hamburguesa */
+.menu-toggle {
+    display: block;
+}
+
+
+  /* Ocultar el menú por defecto */
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 10;
+}
+
+  /* Cuando está activo */
+nav.active {
+    right: 0;
+}
+
+  /* Enlaces en columna */
+nav ul {
+    flex-direction: column;
+    gap: 25px;
+}
+
+  /* Enlaces más grandes */
+nav a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    background-color: var(--color-text-two);
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Ocultar formulario, footer y logo central mientras el menú está abierto*/
+body.menu-open .contenedor-form,
+body.menu-open .logo-contenedor,footer{
+    display: none;
+}
+
+  /* Evitar scroll cuando el menú esté abierto */
+body.menu-open {
+    overflow: hidden;
+}
+}
+
