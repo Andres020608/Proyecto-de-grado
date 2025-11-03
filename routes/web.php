@@ -6,6 +6,10 @@ use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProvedorController;
+
 Route::get('/InicioSesion',function(){
 return view('InicioSesion');
 })->name('IniciarSesion');
@@ -40,5 +44,13 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
+
+Route::resource('products', ProductController::class);
+
+Route::resource('categorias', CategoriaController::class);
+
+Route::resource('provedor', ProvedorController::class);
+
+
 
 require __DIR__.'/auth.php';

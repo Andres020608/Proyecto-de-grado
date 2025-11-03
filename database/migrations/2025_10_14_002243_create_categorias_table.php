@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('categorias', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->enum('estado', ['activo', 'inactivo'])->default('activo'); // 👈 columna estado
             $table->timestamps();
         });
     }
@@ -25,3 +27,4 @@ return new class extends Migration
         Schema::dropIfExists('categorias');
     }
 };
+
