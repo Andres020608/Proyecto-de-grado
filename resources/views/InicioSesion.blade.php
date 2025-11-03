@@ -32,7 +32,7 @@
         </div>
         <nav id="nav"> <!-- Barra de navegación -->
             <ul>
-                <li><a href="#">Sitio</a></li> <!-- Links nav-->
+                <li><a href="{{ route('home') }}">Sitio</a></li> <!-- Links nav-->
                 <li><a href="#">Contactanos</a></li> <!-- Links nav-->
                 <li><a href="#">Ayuda</a></li> <!-- Links nav-->
                 <li><a href="{{ route('Registrarse') }}" id="registrate">Registrate</a></li> <!-- Se conecta con la pagina de registro-->

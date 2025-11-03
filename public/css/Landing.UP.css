@@ -20,24 +20,13 @@ body {
     background-color: var(--color-bg-main);
     color: var(--color-text-one);
 }
-#InicioSesion{
-    background-color: var(--color-text-hover);
-    border: 9px solid var(--color-text-hover);
-    border-radius: 10px;
-}
 
-#InicioSesion:hover{
-    background-color: rgb(153, 15, 43);
-    border: 9px solid rgb(153, 15, 43);
-    color: white;
-    border-radius: 10px;
-}
 /* --- HERO --- */
 .hero {
     position: relative;
     height: 100vh;
     margin-top: -22px;
-    background-image: url("/public/Images/Rosa5.jpeg");
+    background-image: url("/Images/Rosa5.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

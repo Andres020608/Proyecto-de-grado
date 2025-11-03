@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet"> <!-- Vinculación tipo de letra que bajé de google fonts -->
     
-    <link rel="stylesheet" href="css/Registro.css"> <!-- Vinculación con hoja de estilos -->
+    <link rel="stylesheet" href="{{ asset('css/Registro.css') }}"> <!-- Vinculación con hoja de estilos -->
     <title>Registrate</title>
 </head>
 <body>
